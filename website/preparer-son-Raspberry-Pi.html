@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+        <title>Préparer son Raspberry Pi - Mon Raspberry Pi</title>
+    </head>
+
+    <body>
+		<div class="all" >
+			<header>
+				<h1>Mon Raspberry Pi</h1>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="qu-est-ce-que-le-Raspberry-Pi.html">Qu’est ce que le Raspberry Pi ?</a></li>
+					<li><a href="difference-entre-le-modele-A-et-le-modele-B.html">La différence entre le modèle A et le modèle B</a></li>
+					<li><a href="preparer-son-Raspberry-Pi.html">Préparer son Raspberry Pi</a></li>
+					<li>Tutoriels</li>
+				</ul>
+			</nav>
+
+			<div class="corps" >
+				<h2>Préparer son Raspberry Pi</h2>
+				<h3>condition requise</h3>
+				<p>
+					Pour configurer votre Raspberry Pi vous aurez besoin:
+					<ul>
+						<li>
+							d'une carte SD: taille minimal de 4Gb et de classe 4 (plus la classe est élevé, plus la carte va vite et donc plus le système va vite).
+						</li>
+						<li>
+							d'un câble HDMI ou RCA vidéo lead (pour les vielles télévisions)
+						</li>
+						<li>
+							d'un clavier et d'une souris
+						</li>
+						<li>
+							d'un câble Ethernet (internet) [optionnel]
+						</li>
+						<li>
+							d'une alimentation micro-USB (en gros un chargeur de smartphone)
+						</li>
+						<li>
+							enceinte [optionnel]
+						</li>
+					</ul>
+				</p>
+
+				<h3>Préparation de la carte SD</h3>
+
+				<h4>formatage</h4>
+				<p>
+					Le but des prochaines manipulations vont être de "nettoyer" totalement de carte SD (la formater avec le logiciel par défaut de Windows n'est pas une bonne solution).
+					<ul>
+						<li>
+							Windows:
+							<ul>
+								<li>
+									Téléchargez <a href="https://www.sdcard.org/downloads/formatter_4/eula_windows/">SD Formatter 4.0 for Windows</a>
+								</li>
+								<li>
+									Installez le et exécutez le
+								</li>
+								<li>
+									mettre à "ON" dans les options à "format size adjustment"
+								</li>
+								<li>
+									formatez
+								</li>
+							</ul>
+						</li>
+						<li>
+							MAC:
+							<ul>
+								<li>
+									Téléchargez <a href="https://www.sdcard.org/downloads/formatter_4/eula_mac/">SD Formatter 4.0 for Mac</a>
+								</li>
+								<li>
+									Installez le et exécutez le
+								</li>
+								<li>
+									sélectionnez "overwrite format"
+								</li>
+								<li>
+									formatez
+								</li>
+							</ul>
+						</li>
+						<li>
+							LINUX:
+							<ul>
+								<li>
+									installez gparted (sudo apt-get install gparted)
+								</li>
+								<li>
+									supprimez toute les partitions
+								</li>
+								<li>
+									créer une partition en FAT faisant toute la carte SD
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</p>
+
+				<h4>New Out Of Box Software (NOOBS)</h4>
+				<p>
+					NOOBS permet d'installer facilement un OS (c'est un peu le BIOS du Raspberry Pi)
+					<br />
+					il y a 2 versions:
+					<ul>
+						<li>network install only</li>
+						<li>offline and network install</li>
+					</ul>
+					la network install only est vraiment beaucoup plus petite mais ne permet que de faire des installation en étant connecté internet.
+					<br />
+					la seconde elle est évidement la plus complète puisqu'elle intègre déjà un OS dans le cas ou le Raspberry Pi n'est pas connecter à internet (pour le modèle A ou autre)
+					<br />
+					Je vous recommande NOOBS "offline and network install" bien évidemment.
+					<br />
+					téléchargez <a href="http://www.raspberrypi.org/downloads">NOOBS</a>
+					<br />
+					Il ne vous reste plus qu'a extraire l'archive sur la carte SD
+					<br />
+					Ça y est votre carte SD est prête!!!
+				</p>
+					
+			</div>
+
+		</div>
+    </body>
+</html>
