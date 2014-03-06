@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('OpenSans-Regular.ttf');
+}
+
 body
 {
 
@@ -8,6 +13,7 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+	font-family: OpenSans-Regular, Georgia, Verdana, Arial, sans-serif;
 }
 
 header
